@@ -5,24 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div
+      class="container-fluid vh-100 bg-success text-center d-flex justify-content-center "
+    >
+      <div
+        id="cardSize"
+        class="col-6 col-sm-6 col-md-4 col-lg-3 h-50 rounded bg-white rounded-4 mt-3"
+      >
+        <div class="row h-100 ">
+          <div class="card-icon text-start"></div>
+          <div class="card-number mx-auto my-auto display-1 fw-bold"></div>
+          <div class="card-icon text-end align-self-end"></div>
+        </div>
+        <button
+          id="button1"
+          class="btn btn-danger mt-5 shadow p-2 mb-3 bg-body-tertiary rounded"
+        >
+          Click me to change random card
+        </button>
+        <button
+          id="button2"
+          class="btn btn-danger mt-2 shadow p-2 mb-3 bg-body-tertiary rounded"
+        >
+          Activate 10s timer
+        </button>
+
+        <div class="justify-content-center">
+          <input
+            type="text"
+            id="width"
+            class="text-center"
+            placeholder="Width of the Card "
+            aria-label="Width"
+            aria-describedby="basic-addon1"
+          />
+
+          <input
+            type="text"
+            id="height"
+            class="text-center"
+            placeholder="Height of the Card"
+            aria-label="Height"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <button
+          id="button3"
+          class="btn btn-danger mt-2 shadow p-2 mb-3 bg-body-tertiary rounded"
+        >
+          Resize Card
+        </button>
       </div>
     </div>
   </body>
